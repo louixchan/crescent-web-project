@@ -46,6 +46,9 @@
 	width: 100%;
 	padding-bottom: 25px;
 	padding-top: 25px;
+	top: 0;
+    transition: top 0.2s ease-in-out;
+    position: fixed;
 }
 
 .fullscreen-banner-container {
@@ -175,6 +178,10 @@ ul.feature-display-catalog li.feature-display-item {
 .cresent-overlay img {
 	width: 100%;
 	height: 100%;
+}
+
+.nav-up {
+    top: -40px;
 }
 
 @media (max-width: 575px) {
