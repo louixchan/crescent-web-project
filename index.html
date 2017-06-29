@@ -18,7 +18,7 @@
 	    <link href="https://fonts.googleapis.com/css?family=BenchNine|Economica|Teko" rel="stylesheet">
 	</head>
 	<body>
-		<div class="header nav-down">
+		<div id="header" class="header">
 			<div  class="header-logo">
 				<img src="img/logo-125-125.png"/>
 			</div>
@@ -40,102 +40,139 @@
 				</li>
 			</ul>
 		</div>
+		<!-- /Header -->
 
-		<!-- Slide Show -->
-		<div class="container-fluid cresent-mobile-hidden">
-			<div class="row">
-				<div class="carousel slide cresent-carousel" data-ride="carousel">
-					<div class="carousel-inner" role="listbox">
-						<div class="carousel-item active" alt="First Slide">
-							<div class="cresent-top-carousel-item">
-								<div class="cresent-top-carousel-item-title">
-									<img src="img/quality-assurance-40-40.png" class="cresent-tablet-hidden"/>
-									<p>QUALITY ASSURANCE</p>
-								</div>
-								<div class="cresent-top-carousel-item-content">Here is a brief description of QA details. <a href="#">Learn More</a>
-								</div>
-							</div>
-						</div>
-						<div class="carousel-item" alt="Second Slide">
-							<div class=" cresent-top-carousel-item">
-								<div class="cresent-top-carousel-item-title">
-									<img src="img/customer-service-40-40.png" class="cresent-tablet-hidden"/>
-									<p>CUSTOMER SERVICE</p>
-								</div>
-								<div class="cresent-top-carousel-item-content">Here is a brief description of CS details. <a href="#">Learn More</a>
+		<!-- Body -->
+		<div class="body" style="height: 2000px;">
+			<!-- Slide Show -->
+			<div class="container-fluid cresent-mobile-hidden">
+				<div class="row">
+					<div class="carousel slide cresent-carousel" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item active" alt="First Slide">
+								<div class="cresent-top-carousel-item">
+									<div class="cresent-top-carousel-item-title">
+										<img src="img/quality-assurance-40-40.png" class="cresent-tablet-hidden"/>
+										<p>QUALITY ASSURANCE</p>
+									</div>
+									<div class="cresent-top-carousel-item-content">Here is a brief description of QA details. <a href="#">Learn More</a>
+									</div>
 								</div>
 							</div>
+							<div class="carousel-item" alt="Second Slide">
+								<div class=" cresent-top-carousel-item">
+									<div class="cresent-top-carousel-item-title">
+										<img src="img/customer-service-40-40.png" class="cresent-tablet-hidden"/>
+										<p>CUSTOMER SERVICE</p>
+									</div>
+									<div class="cresent-top-carousel-item-content">Here is a brief description of CS details. <a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+							<a class="carousel-control-prev cresent-tablet-hidden" href="#carouselExampleControls" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next cresent-tablet-hidden" href="#carouselExampleControls" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
-						<a class="carousel-control-prev cresent-tablet-hidden" href="#carouselExampleControls" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next cresent-tablet-hidden" href="#carouselExampleControls" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
 				</div>
 			</div>
-		</div>
+			<!-- /Slide Show -->
 
-		<div class="container-fluid">
-			<div class="row cresent-overlay">
-				<img src="img/dubrovnik-1920-975.png"/>
-				<div class="cresent-overlay-left col-lg-3 col-md-4 cresent-mobile-hidden">
-					<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px">Testing 1</div>
-					<h1 style="position: relative; color: white; display: block; letter-spacing: .6rem">Testing 2</h1>
-					<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px; font-size: .8rem;">Testing 3</div>
-					<button class="btn" style="cursor: pointer; position: relative; color: white; display: block; top: 30%; background-color: transparent; border-width: 2px; border-color: white; border-radius: 5px; width: 130px; margin: auto; margin-top: 1rem; letter-spacing: .2rem;">Testing 4</button>
+			<div class="container-fluid">
+				<div class="row cresent-overlay">
+					<img src="img/dubrovnik-1920-975.png"/>
+					<div class="cresent-overlay-left col-lg-3 col-md-4 cresent-mobile-hidden">
+						<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px">Testing 1</div>
+						<h1 style="position: relative; color: white; display: block; letter-spacing: .6rem">Testing 2</h1>
+						<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px; font-size: .8rem;">Testing 3</div>
+						<button class="btn" style="cursor: pointer; position: relative; color: white; display: block; top: 30%; background-color: transparent; border-width: 2px; border-color: white; border-radius: 5px; width: 130px; margin: auto; margin-top: 1rem; letter-spacing: .2rem;">Testing 4</button>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="feature-display">
+					<h2 class="feature-display-title" style="letter-spacing: .6rem;">
+						SEASONAL PICKS
+					</h2>
+					<ul class="feature-display-catalog">
+						<li class="feature-display-item">
+							<img class="feature-display-img"/>
+							<p class="feature-display-name">Phone Stand</p>
+							<p class="feature-display-description">Pine Wood</p>
+							<p class="feature-display-price">$ 30.00</p>
+							<button class="feature-display-button">ADD TO CART NOW</button>
+						</li>
+						<li class="feature-display-item">
+							<img class="feature-display-img"/>
+							<p>asdfasdfdasfasdf</p>
+							<button class="feature-display-button">ADD TO CART NOW</button>
+						</li>
+						<li class="feature-display-item">
+							<img class="feature-display-img"/>
+							<p>asdfasdfasdfdas</p>
+							<button class="feature-display-button">ADD TO CART NOW</button>
+						</li>
+						<li class="feature-display-item">
+							<img class="feature-display-item-img"/>
+							<p>asdfasdfasdffasdf</p>
+							<button class="feature-display-item-button">ADD TO CART NOW</button>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="feature-display">
-				<h2 class="feature-display-title" style="letter-spacing: .6rem;">
-					SEASONAL PICKS
-				</h2>
-				<ul class="feature-display-catalog">
-					<li class="feature-display-item">
-						<img class="feature-display-img"/>
-						<p class="feature-display-name">Phone Stand</p>
-						<p class="feature-display-description">Pine Wood</p>
-						<p class="feature-display-price">$ 30.00</p>
-						<button class="feature-display-button">ADD TO CART NOW</button>
-					</li>
-					<li class="feature-display-item">
-						<img class="feature-display-img"/>
-						<p>asdfasdfdasfasdf</p>
-						<button class="feature-display-button">ADD TO CART NOW</button>
-					</li>
-					<li class="feature-display-item">
-						<img class="feature-display-img"/>
-						<p>asdfasdfasdfdas</p>
-						<button class="feature-display-button">ADD TO CART NOW</button>
-					</li>
-					<li class="feature-display-item">
-						<img class="feature-display-item-img"/>
-						<p>asdfasdfasdffasdf</p>
-						<button class="feature-display-item-button">ADD TO CART NOW</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<p></p>
-		<p></p>
-		<p></p>
-		<p></p>
+		<!-- /Body -->
 
 		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
 	    <script type="text/javascript" src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="cresent.min.js"></script>
+	    <script type="text/javascript">
+	    	
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var header = $("#header");
+    var navbarHeight = $(header).outerHeight();
+
+    $(window).scroll(hasScrolled);
+
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+        
+        if( st > 107 ) {
+			$('body').addClass('scrolling');
+		}
+
+		if( st < 107) {
+			$('body').removeClass('scrolling');
+		}
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        // if (st > lastScrollTop && st > navbarHeight){
+        //     // Scroll Down
+        //     $(header).removeClass('nav-down').addClass('nav-up');
+        //     console.log("Test down");
+        // } else {
+        //     // Scroll Up
+        //     if(st + $(window).height() < $(document).height()) {
+        //         $(header).removeClass('nav-up').addClass('nav-down');
+        //     }
+        // }
+    }
+	    </script>
 	</body>
 </html>
