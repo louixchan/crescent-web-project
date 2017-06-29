@@ -48,7 +48,6 @@
 	padding-top: 25px;
 	top: 0;
     transition: top 0.2s ease-in-out;
-    position: fixed;
 }
 
 .fullscreen-banner-container {
