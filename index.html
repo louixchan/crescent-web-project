@@ -15,9 +15,9 @@
 	    <link href="cresent.css" rel="stylesheet"/>
 
 	    <!-- Font Section -->
-	    <link href="https://fonts.googleapis.com/css?family=BenchNine|Economica|Teko" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=BenchNine|Economica|Teko|Montserrat:100" rel="stylesheet">
 	</head>
-	<body>
+	<body testingVariable="">
 		<div id="header" class="header">
 			<div  class="header-logo">
 				<img src="img/logo-125-125.png"/>
@@ -86,15 +86,15 @@
 			<div class="container-fluid">
 				<div class="row cresent-overlay">
 					<img src="img/dubrovnik-1920-975.png"/>
-					<div class="cresent-overlay-left col-lg-3 col-md-4 cresent-mobile-hidden">
-						<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px">Testing 1</div>
-						<h1 style="position: relative; color: white; display: block; letter-spacing: .6rem">Testing 2</h1>
-						<div style="position: relative; color: white; display: block; top: 25%; margin-bottom: 6px; font-size: .8rem;">Testing 3</div>
-						<button class="btn" style="cursor: pointer; position: relative; color: white; display: block; top: 30%; background-color: transparent; border-width: 2px; border-color: white; border-radius: 5px; width: 130px; margin: auto; margin-top: 1rem; letter-spacing: .2rem;">Testing 4</button>
+					<div class="cresent-overlay-left col-lg-3 col-md-4 cresent-mobile-hidden cresent-white-content">
+						<h4>Testing 1</h4>
+						<h1>Testing 2</h1>
+						<h5>Testing 3</h5>
+						<button class="btn cresent-button cresent-white-content">Testing 4</button>
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			<div class="container cresent-tablet-fullwidth">
 				<div class="feature-display">
 					<h2 class="feature-display-title" style="letter-spacing: .6rem;">
 						SEASONAL PICKS
@@ -105,22 +105,22 @@
 							<p class="feature-display-name">Phone Stand</p>
 							<p class="feature-display-description">Pine Wood</p>
 							<p class="feature-display-price">$ 30.00</p>
-							<button class="feature-display-button">ADD TO CART NOW</button>
+							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
 						</li>
 						<li class="feature-display-item">
 							<img class="feature-display-img"/>
 							<p>asdfasdfdasfasdf</p>
-							<button class="feature-display-button">ADD TO CART NOW</button>
+							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
 						</li>
 						<li class="feature-display-item">
 							<img class="feature-display-img"/>
 							<p>asdfasdfasdfdas</p>
-							<button class="feature-display-button">ADD TO CART NOW</button>
+							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
 						</li>
 						<li class="feature-display-item">
 							<img class="feature-display-item-img"/>
 							<p>asdfasdfasdffasdf</p>
-							<button class="feature-display-item-button">ADD TO CART NOW</button>
+							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
 						</li>
 					</ul>
 				</div>
@@ -134,45 +134,47 @@
 	    <script type="text/javascript" src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
 	    <script type="text/javascript">
 	    	
-    // Hide Header on on scroll down
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
-    var header = $("#header");
-    var navbarHeight = $(header).outerHeight();
+		    // Hide Header on on scroll down
+		    var didScroll;
+		    var lastScrollTop = 0;
+		    var delta = 5;
+		    var header = $("#header");
+		    var navbarHeight = $(header).outerHeight();
 
-    $(window).scroll(hasScrolled);
+		    $(window).scroll(hasScrolled);
 
-    setInterval(function() {
-        if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-        }
-    }, 250);
+		    setInterval(function() {
+		        if (didScroll) {
+		            hasScrolled();
+		            didScroll = false;
+		        }
+		    }, 250);
 
-    function hasScrolled() {
-        var st = $(this).scrollTop();
-        
-        if( st > 107 ) {
-			$('body').addClass('scrolling');
-		}
+		    function hasScrolled() {
+		        var st = $(this).scrollTop();
+		        
+		        if( st > 107 ) {
+					$('body').addClass('scrolling');
+					document.getElementById('testing').setAttr('testingVariable', 0);
+					document.getElementById('testing').getAttr('testingVariable'); // 0
+				}
 
-		if( st < 107) {
-			$('body').removeClass('scrolling');
-		}
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        // if (st > lastScrollTop && st > navbarHeight){
-        //     // Scroll Down
-        //     $(header).removeClass('nav-down').addClass('nav-up');
-        //     console.log("Test down");
-        // } else {
-        //     // Scroll Up
-        //     if(st + $(window).height() < $(document).height()) {
-        //         $(header).removeClass('nav-up').addClass('nav-down');
-        //     }
-        // }
-    }
+				if( st < 107) {
+					$('body').removeClass('scrolling');
+				}
+		        // If they scrolled down and are past the navbar, add class .nav-up.
+		        // This is necessary so you never see what is "behind" the navbar.
+		        // if (st > lastScrollTop && st > navbarHeight){
+		        //     // Scroll Down
+		        //     $(header).removeClass('nav-down').addClass('nav-up');
+		        //     console.log("Test down");
+		        // } else {
+		        //     // Scroll Up
+		        //     if(st + $(window).height() < $(document).height()) {
+		        //         $(header).removeClass('nav-up').addClass('nav-down');
+		        //     }
+		        // }
+		    }
 	    </script>
 	</body>
 </html>
