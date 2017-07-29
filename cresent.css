@@ -164,13 +164,13 @@ body.scrolling .body {
 
 ul.feature-display-catalog {
 	list-style: none;
-	padding: 0;
+	padding-bottom: 0;
 }
 
 ul.feature-display-catalog li.feature-display-item {
 	display: inline;
 	float: left;
-	width: 25%;
+	width: 33.33%;
 	text-align: center;
 }
 
@@ -200,6 +200,24 @@ ul.feature-display-catalog li.feature-display-item {
 	padding-right: 25px;
 	padding-left: 25px;
 	width: 50%;
+	text-align: center; 
+}
+
+.cresent-overlay-middle {
+	position: absolute; 
+	top: 35%; 
+	margin: 0 auto;
+	z-index: 1;
+	padding-right: 25px;
+	padding-left: 25px;
+	width: 100%;
+	text-align: center; 
+}
+
+.cresent-overlay-middle h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 1.5rem;
 	text-align: center; 
 }
 
@@ -256,7 +274,7 @@ ul.feature-display-catalog li.feature-display-item {
 }
 
 .cresent-tablet-fullwidth {
-	width: 940px;
+	width: 80%;
 	max-width: 100%;
 }
 

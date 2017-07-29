@@ -14,15 +14,18 @@
 	    <link href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.css" rel="stylesheet"/>
 	    <link href="cresent.css" rel="stylesheet"/>
 
+	    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+		<script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+
 	    <!-- Font Section -->
 	    <link href="https://fonts.googleapis.com/css?family=BenchNine|Economica|Teko|Montserrat:100" rel="stylesheet">
 	</head>
-	<body testingVariable="">
+	<body>
 		<div id="header" class="header">
 			<div  class="header-logo">
 				<img src="img/logo-125-125.png"/>
 			</div>
-			<ul class="nav justify-content-center">
+			<ul class="nav justify-content-center ">
 				<li class="nav-item nav-btn">
 					<a class="nav-link" href="#">News</a>
 				</li>
@@ -43,11 +46,11 @@
 		<!-- /Header -->
 
 		<!-- Body -->
-		<div class="body" style="height: 2000px;">
+		<div class="body">
 			<!-- Slide Show -->
 			<div class="container-fluid cresent-mobile-hidden">
 				<div class="row">
-					<div class="carousel slide cresent-carousel" data-ride="carousel">
+					<div class="cresent-carousel" data-ride="carousel">
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active" alt="First Slide">
 								<div class="cresent-top-carousel-item">
@@ -94,37 +97,52 @@
 					</div>
 				</div>
 			</div>
-			<div class="container cresent-tablet-fullwidth">
-				<div class="feature-display">
-					<h2 class="feature-display-title" style="letter-spacing: .6rem;">
-						SEASONAL PICKS
-					</h2>
-					<ul class="feature-display-catalog">
-						<li class="feature-display-item">
-							<img class="feature-display-img"/>
-							<p class="feature-display-name">Phone Stand</p>
-							<p class="feature-display-description">Pine Wood</p>
-							<p class="feature-display-price">$ 30.00</p>
-							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
-						</li>
-						<li class="feature-display-item">
-							<img class="feature-display-img"/>
-							<p>asdfasdfdasfasdf</p>
-							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
-						</li>
-						<li class="feature-display-item">
-							<img class="feature-display-img"/>
-							<p>asdfasdfasdfdas</p>
-							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
-						</li>
-						<li class="feature-display-item">
-							<img class="feature-display-item-img"/>
-							<p>asdfasdfasdffasdf</p>
-							<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
-						</li>
-					</ul>
+
+			<div class="row">
+				<div class="container cresent-tablet-fullwidth" style="padding-bottom: 150px;">
+					<div class="feature-display">
+						<h2 class="feature-display-title" style="letter-spacing: .6rem;">
+							SEASONAL PICKS
+						</h2>
+						<ul class="feature-display-catalog">
+							<li class="feature-display-item">
+								<img class="feature-display-img" src="img/CA6A6758.JPG"/>
+								<p class="feature-display-name">Phone Stand</p>
+								<p class="feature-display-description">Pine Wood</p>
+								<p class="feature-display-price">$ 30.00</p>
+								<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
+							</li>
+							<li class="feature-display-item">
+								<img class="feature-display-img" src="img/CA6A6758.JPG"/>
+								<p class="feature-display-name">Phone Stand</p>
+								<p class="feature-display-description">Pine Wood</p>
+								<p class="feature-display-price">$ 30.00</p>
+								<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
+							</li>
+							<li class="feature-display-item">
+								<img class="feature-display-img" src="img/CA6A6758.JPG"/>
+								<p class="feature-display-name">Phone Stand</p>
+								<p class="feature-display-description">Pine Wood</p>
+								<p class="feature-display-price">$ 30.00</p>
+								<button class="btn cresent-button cresent-small-font cresent-black-content">ADD TO CART</button>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
+
+			<div class="container-fluid" style="display: block;">
+				<div class="row cresent-overlay">
+					<img src="img/dubrovnik-1920-975.png"/>
+					<div class="cresent-overlay-middle cresent-mobile-hidden cresent-white-content">
+						<h1>Testing 2</h1>
+						<h5>Testing 3</h5>
+						<br>
+						<button class="btn cresent-button cresent-white-content">Testing 4</button>
+					</div>
+				</div>
+			</div>
+
 		</div>
 		<!-- /Body -->
 
@@ -155,8 +173,8 @@
 		        
 		        if( st > 107 ) {
 					$('body').addClass('scrolling');
-					document.getElementById('testing').setAttr('testingVariable', 0);
-					document.getElementById('testing').getAttr('testingVariable'); // 0
+					// document.getElementById('testing').setAttr('testingVariable', 0);
+					// document.getElementById('testing').getAttr('testingVariable'); // 0
 				}
 
 				if( st < 107) {
